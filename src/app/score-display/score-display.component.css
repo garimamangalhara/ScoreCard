@@ -1,0 +1,128 @@
+.quantScore,
+.verbalScore,
+.totalScore{
+    height:150px;
+}
+.quantScore>div,
+.verbalScore>div,
+.totalScore>div{
+    font-size:30px;
+}
+.totalScore label{
+    font-size:20px;
+}
+.quantScore{
+    border-right: 1px solid #f5f5f5;
+
+}
+.textContent{
+    text-align: center;
+}
+.quant,
+.verbal{
+    display: inline-block;
+    margin:20px;
+}
+.quant>div,
+.verbal>div
+{
+    font-size:16px;
+    text-align:left;
+}
+.quant input,
+.verbal input{
+    width:100px;
+    margin:10px;
+}
+.quant span,
+.verbal span{
+    font-size: 14px;
+}
+button{
+    color: #f5f5f5;
+    background-color: #0fa2eb;
+    border-radius: 20px;
+    border-width: 0;
+    height: 25px;
+    font-size: 14px;
+    width: 170px;
+}
+
+.blue{
+    width:480px;
+    background-color: #0fa2eb;
+    height:15px;
+    position:absolute;
+    top:90px;
+    z-index:5;
+    border-radius:0 10px 10px 0;
+}
+.yellow{
+    width:480px;
+    background-color: #ffe28a;
+    height:15px;
+    position:absolute;
+    top:90px;
+    z-index:4;
+    border-radius:0 10px 10px 0;
+}
+.grey{
+    width:480px;
+    background-color: #f5f5f5;
+    height:15px;
+    position:absolute;
+    top:90px;
+    z-index:3;
+    border-radius:0 10px 10px 0;
+}
+#totalBlue,
+#totalGrey,
+#totalYellow{
+    width:800px;
+}
+.arrow-down-blue {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #0fa2eb;
+    position:absolute;
+    top:82px;
+  }
+  .arrow-down-yellow {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #ffe28a;
+    position:absolute;
+    top:82px;
+  }
+  .arrow-down-yellow>div,
+  .arrow-down-blue>div{
+    top: -25px;
+    color: black;
+    position: absolute;
+    left: -10px;
+    font-size: 12px;
+}
+.arrow-up-yellow>div{
+    top: 5px;
+    color: black;
+    position: absolute;
+    left: -10px;
+    font-size: 12px; 
+}
+  .arrow-up-yellow {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #ffe28a;
+    position:absolute;
+    top:107px;
+  }
+  .row{
+      margin-right:0px;
+      margin-left: 0px;
+  }

@@ -1,0 +1,100 @@
+<form class="textContent" #myForm="ngForm" (ngSubmit)="submit()" novalidate>
+  <div class="quant">
+    <div>
+      <label>Quant</label>
+    </div>
+    <div>
+      <span>Current</span>
+      <input [(ngModel)]="quantCurrent" type="number" name="quantCurrent" required>
+      <span>Target</span>
+      <input [(ngModel)]="quantTarget" type="number" name="quantTarget" required>
+    </div>
+  </div>
+  <div class="verbal">
+    <div>
+      <label>Verbal</label>
+    </div>
+    <div>
+      <span>Current</span>
+      <input [(ngModel)]="verbalCurrent" type="number" name="verbalCurrent" required>
+      <span>Target</span>
+      <input [(ngModel)]="verbalTarget" type="number" name="verbalTarget" required>
+    </div>
+  </div>
+  <div>
+    <button [disabled]="myForm.invalid">Submit and Refresh</button>
+  </div>
+</form>
+
+<div [hidden]="graphDisabled">
+  <div class="row">
+    <div class="totalScore col-md-12">
+      <label>Total Score</label>
+      <div>
+        {{totalCurrent}}
+      </div>
+      <div id="totalBlueArrow" class="arrow-down-blue">
+        <div>
+          {{totalCurrent}}
+        </div>
+      </div>
+      <div class="blue" id="totalBlue">
+      </div>
+      <div id="totalYellowArrow" class="arrow-down-yellow">
+        <div>
+          {{totalTarget}}
+        </div>
+      </div>
+      <div class="yellow" id="totalYellow">
+      </div>
+      <div class="grey" id="totalGrey">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="quantScore col-md-6">
+      <label>Quant Score</label>
+      <div>
+        Q{{quantCurrent}}
+      </div>
+      <div id="quantBlueArrow" class="arrow-down-blue">
+        <div>
+          Q{{quantCurrent}}
+        </div>
+      </div>
+      <div class="blue" id="quantBlue">
+      </div>
+      <div id="quantYellowArrow" class="arrow-down-yellow">
+        <div>
+          Q{{quantTarget}}
+        </div>
+      </div>
+      <div class="yellow" id="quantYellow">
+      </div>
+      <div class="grey" id="quantGrey">
+      </div>
+    </div>
+    <div class="verbalScore col-md-6">
+      <label>Verbal Score</label>
+      <div>
+        V{{verbalCurrent}}
+      </div>
+      <div id="verbalBlueArrow" class="arrow-down-blue">
+        <div>
+          V{{verbalCurrent}}
+        </div>
+      </div>
+      <div class="blue" id="verbalBlue">
+      </div>
+      <div id="verbalYellowArrow" class="arrow-down-yellow">
+        <div>
+          V{{verbalTarget}}
+        </div>
+      </div>
+      <div class="yellow" id="verbalYellow">
+      </div>
+      <div class="grey" id="verbalGrey">
+      </div>
+    </div>
+  </div>
+</div>
